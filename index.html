@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RapidoClone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>Fast</span>Travel</a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home" onclick="navRemove()">home</a>
+            <a href="#about" onclick="navRemove()">about us</a>
+            <a href="#career" onclick="navRemove()">career</a>
+            <a href="#blog" onclick="navRemove()">blog</a>
+            <a href="#media" onclick="navRemove()">press</a>
+            <a href="#contact" onclick="navRemove()">contact us</a>
+            <a href="#corporate" onclick="navRemove()">FR corporate</a>
+        </nav>
+        <div class="icon">
+            <i class="fa-solid fa-download" id="download" title="download app" onclick="alert('No App is linked here now')"></i>
+            <i class="fas fa-bars" id="menu-bars"></i>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>India’s largest Tour & Travel service</h3>
+            <p>FastTravel is India’s first and fastest-growing Transportation
+                 app with a whopping 25 Million+ app downloads. We are now running 
+                 operations in more than 100 cities.</p>
+                 <a href="#" class="btn">Download App</a>
+        </div>
+        <div class="image">
+            <img src="images/home1.jpg" alt="">
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <h1 class="heading">know us better</h1>
+        <div class="column reveal">
+            <div class="image">
+                <img src="images/aboutus.jpg" alt="">
+            </div>
+            <div class="content">
+                <p>We have crossed 10 million happy customers and 100 million rides.
+                FasTravel is here to revolutionize intra-city travel as we bring youredefined comfort
+                & convenience with our disruptive service model.</p>
+                <a href="#" class="btn">read more here</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="impact reveal">
+        <h1 class="heading">Our Impact</h1>
+        <p>Our presence in the country has changed the concept of intra-city travel and
+             made last-mile connectivity affordable for all.</p>
+        <div class="box-container reveal">
+            <div class="box">
+                <i class="fa-solid fa-cloud-arrow-down"></i>
+                <h3>25M+</h3>
+                <h2>downloads</h2>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-city"></i>
+                <h3>100+</h3>
+                <h2>cities</h2>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-child"></i>
+                <h3>1M+</h3>
+                <h2>Captains</h2>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-user-group"></i>
+                <h3>15M+</h3>
+                <h2>customers</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="team" id="career">
+        <h1 class="heading">Career</h1>
+        <div class="box-container reveal">
+            <div class="content">
+                <h3>Be a part of our team.</h3>
+                <p>We are so glad you want to join us in exploring a world of endless
+                    opportunities at FastTravel. Let’s find a spot for you.</p>
+                    <a href="#" class="btn">Explore career</a>
+            </div>
+            <div class="image">
+                <img src="images/team.webp" alt="">
+            </div>
+        </div>
+       
+    </section>
+
+    <section class="features">
+        <h1 class="heading">What's in it for you</h1>
+        <div class="select-box">
+            <a class="customer btn" id="customer-btn" onclick="cus()">customer</a>
+            <a class="captains btn" id="captain-btn" onclick="cap()">captains</a>
+        </div>
+        <div class="customer-box reveal" id="customer">
+            <div class="box">
+                <img src="images/customer1.png">
+                <h3>doorstep pickup</h3>
+                <p>We will pick you up from where you are and drop you exactly where you need to be.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/customer2.png">
+                <h3>affordable price</h3>
+                <p>No more latent prices and shocked reactions after seeing the final ride cost. We're here with the most affordable rides for all.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/customer3.webp">
+                <h3>quick service</h3>
+                <p>Trend setters of smart commute be it traffic or rush hours.</p>
+            </div>
+        </div>
+
+        
+        <div class="captain-box reveal"  id="captain" >
+            <div class="box">
+                <img src="images/captain1.webp">
+                <h3>Zero Pressure Rides</h3>
+                <p>Gives a Captain more room in a day without hampering their daily activities. You can decide on when to go on the next ride.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/captain2.webp">
+                <h3>Redeemable Earnings</h3>
+                <p>What’s the use of getting paid when you can't withdraw money when you want to?Redeems can be transferred
+                     from Rapido wallet to your bank account at your convenience.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/captain3.webp">
+                <h3>Insured Travels</h3>
+                <p>All rides are insured. Accidental coverage and medical benefits covered up to Rs 5 Lakh for Captain & family.</p>
+            </div>
+        </div>
+    </section>
+    <div id="blog"></div>
+    <h1 class="heading" style="margin-top: 6.5rem;">Blogs</h1>
+    <div class="post-container owl-carousel reveal">
+        <div class="post">
+            <div class="image">
+                <img src="images/img1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="date"><i class="fas fa-calender-alt"></i> Jan 1, 2022</div>
+                <a href="" class="title">post title goes here</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis. Totam, facere?
+                     Accusantium alias qui, reiciendis quae ea perferendis quod.</p>
+                <a href="read more" class="link">read more</a>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="image">
+                <img src="images/img2.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="date"><i class="fas fa-calender-alt"></i> Jan 2, 2022</div>
+                <a href="" class="title">post title goes here</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis. Totam, facere?
+                     Accusantium alias qui, reiciendis quae ea perferendis quod.</p>
+                <a href="read more" class="link">read more</a>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="image">
+                <img src="images/img3.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="date"><i class="fas fa-calender-alt"></i> Jan 2, 2022</div>
+                <a href="" class="title">post title goes here</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis. Totam, facere?
+                     Accusantium alias qui, reiciendis quae ea perferendis quod.</p>
+                <a href="read more" class="link">read more</a>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="image">
+                <img src="images/img4.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="date"><i class="fas fa-calender-alt"></i> Jan 3, 2022</div>
+                <a href="" class="title">post title goes here</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis. Totam, facere?
+                     Accusantium alias qui, reiciendis quae ea perferendis quod.</p>
+                <a href="read more" class="link">read more</a>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="image">
+                <img src="images/img5.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="date"><i class="fas fa-calender-alt"></i> Jan 4, 2022</div>
+                <a href="" class="title">post title goes here</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis. Totam, facere?
+                     Accusantium alias qui, reiciendis quae ea perferendis quod.</p>
+                <a href="read more" class="link">read more</a>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="image">
+                <img src="images/img7.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="date"><i class="fas fa-calender-alt"></i> Jan 5, 2022</div>
+                <a href="" class="title">post title goes here</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis. Totam, facere?
+                     Accusantium alias qui, reiciendis quae ea perferendis quod.</p>
+                <a href="read more" class="link">read more</a>
+            </div>
+        </div>
+        <div class="post">
+            <div class="image">
+                <img src="images/img9.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="date"><i class="fas fa-calender-alt"></i> Jan 6, 2022</div>
+                <a href="" class="title">post title goes here</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis. Totam, facere?
+                     Accusantium alias qui, reiciendis quae ea perferendis quod.</p>
+                <a href="read more" class="link">read more</a>
+            </div>
+        </div>
+        <div class="post">
+            <div class="image">
+                <img src="images/img8.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="date"><i class="fas fa-calender-alt"></i> Jan 7, 2022</div>
+                <a href="" class="title">post title goes here</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis. Totam, facere?
+                     Accusantium alias qui, reiciendis quae ea perferendis quod.</p>
+                <a href="read more" class="link">read more</a>
+            </div>
+        </div>
+        <div class="post">
+            <div class="image">
+                <img src="images/img6.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="date"><i class="fas fa-calender-alt"></i> Jan 8, 2022</div>
+                <a href="" class="title">post title goes here</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis. Totam, facere?
+                     Accusantium alias qui, reiciendis quae ea perferendis quod.</p>
+                <a href="read more" class="link">read more</a>
+            </div>
+        </div>
+    </div>
+
+<section class="media" id="media">
+    <h1 class="heading">press and media</h1>
+        <div class="box-container reveal">
+            <div class="box">
+                <img src="images/media1.jpg">
+                <h3>old man in delhi uses FastTravel to reach hospital on time during emergency......</h3>
+                <p>old man in delhi uses FastTravel to reach hospital on time during emergency laborum a vel eaque.
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, alias!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="images/media2.jpg">
+                <h3>Young ladies book FastTravel midnight to return from office as they consider it safe.....</h3>
+                <p>Young ladies book FastTravel midnight to return from office as they consider it safe eaque.
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, alias!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="images/media3.webp">
+                <h3>man uses FastTravel to reach office 25km away as it is budget friendly.....</h3>
+                <p>man uses FastTravel to reach office 25km away as it is budget friendly ipsa laborum a vel eaque.
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, alias!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+</section>
+
+    
+
+    <section class="contact" id="contact">
+        <div class="image reveal">
+            <img src="images/contactus.png" alt="">
+        </div>
+        <form action="" class="reveal">
+            <h1 class="heading">contact us</h1>
+
+            <div class="inputBox">
+               <label>name</label>
+                <input type="text" placeholder="Enter Your Name" required>
+                
+            </div>
+
+            <div class="inputBox">
+               <label>email</label>
+               <input type="email" placeholder="Enter E-Mail" required>
+               
+           </div>
+
+           <div class="inputBox">
+               <label>phone</label>
+               <input type="number" placeholder="Enter Mobile no." required>
+               
+           </div>
+
+           <div class="inputBox">
+               <label>message</label>
+               <textarea required placeholder="Write message" name="" id="" cols="30" rows="10"></textarea>
+               
+           </div>
+
+           <input type="submit" class="btn" value="send message">
+        </form>
+    </section>
+
+
+    <section class="corporate" id="corporate">
+        <h1 class="heading">FastTravel Corporate</h1>
+        <div class="box-container reveal">
+            <div class="content">
+                <h3>Employee travel management at your fingertips!</h3>
+                <p>Efficient, quick and affordable employee travel solution for your organisation</p>
+                    <a href="#" class="btn">Explore Corporate</a>
+            </div>
+            <div class="image">
+                <img src="images/corporate.png" alt="">
+            </div>
+        </div>
+       <h1 class="heading">Advantage of FastTravel Corporate</h1>
+       <div class="customer-box reveal" id="customer">
+        <div class="box">
+            <img src="images/cor1.jpg">
+            <h3>lower expenses</h3>
+            <p>We will pick you up from where you are and drop you exactly where you need to be.</p>
+        </div>
+
+        <div class="box">
+            <img src="images/cor2.webp">
+            <h3>travel tracking</h3>
+            <p>No more latent prices and shocked reactions after seeing the final ride cost. We're here with the most affordable rides for all.</p>
+        </div>
+    </div>
+    <div class="customer-box reveal" id="customer">
+        <div class="box">
+            <img src="images/cor3.webp">
+            <h3>increase productivity</h3>
+            <p>We will pick you up from where you are and drop you exactly where you need to be.</p>
+        </div>
+
+        <div class="box">
+            <img src="images/cor4.webp">
+            <h3>24/7 service</h3>
+            <p>No more latent prices and shocked reactions after seeing the final ride cost. We're here with the most affordable rides for all.</p>
+        </div>
+    </div>
+       
+    </section>
+
+
+    <div class="footer">
+        <div class="box-container">
+
+           <div class="box">
+               <h3>about us</h3>
+               <p>We have crossed 10 million happy customers and 100 million rides.
+                Rapido is here to revolutionize intra-city travel as we bring youredefined comfort
+                & convenience with our disruptive service model.</p>
+           </div>
+           <div class="box">
+               <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#about">about us</a>
+                <a href="#career">career</a>
+                <a href="#blog">blog</a>
+                <a href="#press">press</a>
+                <a href="#contact">contact us</a>
+                <a href="#frcorporate">FR corporate</a>
+           </div>
+           <div class="box">
+               <h3>follow us</h3>
+               <a href="#">LinkedIn</a>
+               <a href="#">Instagram</a>
+               <a href="#">facebook</a>
+               <a href="#">twitter</a>
+           </div>
+           <div class="box">
+               <h3>contact info</h3>
+               <div class="info">
+                   <i class="fas fa-phone"></i>
+                   <p>+123-456-7890 <br> +111-222-7890</p>
+               </div>
+               <div class="info">
+                   <i class="fas fa-envelope"></i>
+                   <p> mra@gmail.com <br> reyaz@gmail.com </p>
+               </div>
+               <div class="info">
+                   <i class="fas fa-map-marker-alt"></i>
+                   <p>Kulti, West Bengal - 713343</p>
+               </div>
+           </div>
+        </div>
+        <h1 class="credit">&copy; copyright @2022 by Md Reyaz Alam</h1>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+         $(document).ready(function(){
+            $('.post-container').owlCarousel({
+                pagination:false,
+                autoplay:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    700:{
+                        items:2
+                    },
+                    1000:{
+                        items:3
+                    },
+                    1200:{
+                        items:4
+                    },
+                }
+            })
+        })
+
+    </script>
+</body>
+</html>
