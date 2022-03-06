@@ -99,19 +99,19 @@ header .navbar a:hover:after {
 
 header .icon i{
     cursor: pointer;
-    margin-left: .5rem;
-    height: 4.5rem;
-    line-height: 4.5rem;
-    width: 4.5rem;
+    margin-left: .6rem;
+    height: 5rem;
+    line-height: 4.9rem;
+    width: 5rem;
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 3.4rem;
     color: var(--black);
     border-radius: 50%;
-    background: #eee;
+    
 }
 header .icon #download{
-    background: var(--green);
-    color: #fff;
+
+    color: var(--green);
 }
 header .icon #menu-bars{
     display: none;
@@ -618,9 +618,13 @@ header .icon #menu-bars{
     html{
         font-size: 40%;
     }
+    header a.logo{
+        font-size: 3.2rem;
+    }
     header .icon #menu-bars{
         display: inline-block;
     }
+
     section{
         min-height: 62vh;
     }
@@ -639,12 +643,14 @@ header .icon #menu-bars{
     }
     header .navbar a{
         display: block;
-        font-size: 2.3rem;
-        padding: 1.5rem;
+        font-size: 2.7rem;
+        padding: 1.7rem;
+        margin-bottom: .4rem;
+        color: #fff;
         
     }
     header .navbar a:hover{
-        color: white;
+        color: rgb(19, 18, 18);
     }
     header .navbar.active{
         clip-path: polygon(0 0,100% 0, 100% 100%,0 100%);
